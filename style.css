@@ -1,0 +1,128 @@
+.body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 150px 1fr;
+    grid-template-areas: 
+        "sidebar header"
+        "sidebar main";
+    height: 100vh;
+}
+
+.sidebar {
+    background-color:rgb(25, 146, 212);
+    grid-area: sidebar;
+    line-height: 0px;
+}
+
+.header {
+    background-color: red;
+    grid-area: header;
+}
+
+.main-panel {
+    background-color: blue;
+    grid-area: main;
+}
+
+.sidebar-heading {
+    padding-left: 10px;
+}
+
+.accessories-1 {
+    padding: 12px;
+}
+
+.accessories-2 {
+    padding: 12px;
+}
+
+
+  /* Header Panel  */
+
+    /* First Row  */
+  .search-input {
+    width: 30pc;
+    padding: 10px;
+    border: 2px solid #ccc;
+    background-color: #f0f0f0; 
+    border-radius: 25px 0 0 25px;
+    outline: none;
+    transition: width 0.4s ease;
+  }
+  
+  .search-input:focus {
+    width: 34pc;
+    border-color: #007bff;
+  }
+
+  .smallthings-1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .mag-glass{
+    padding: 10px;
+  }
+
+  .smallthings-2{
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+    align-items: center;
+  }
+
+  .first-row {
+    display: flex;
+    justify-content: space-around;
+  }
+
+
+   /* Second Row  */
+
+   .second-row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+   }
+
+   .smallthings-3 {
+    display: flex;
+    gap: 16px;
+   }
+
+   .big-profile {
+    padding-left: 38px;
+   }
+
+   .buttons button {
+    background-color:rgb(25, 146, 212); 
+    color: white;
+    border: none;
+    padding: 8px 28px;
+    margin: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 17px;
+}
+
+.buttons button:hover {
+    background-color: green
+}
+
+.buttons {
+    padding-left: 15pc;
+}
+
+ .hashtag{
+    font-size: 20px;
+    font-weight: bolder;
+ }
