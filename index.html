@@ -2,69 +2,110 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
 </head>
+
 <body>
-    
     <!-- Grid Layout -->
     <div class="grid-layout">
         <!-- Sidebar  -->
         <div class="sidebar">
-            <div class="sidebar-heading"><img src="" alt=""><h2>Dashboard</h2> </div>
+            <div class="sidebar-heading">
+                <img width="42" height="42" src="https://img.icons8.com/color/48/dashboard-layout.png" alt="dashboard-layout"/>
+                <div>Dashboard</div>
+            </div>
             <!-- Accessories 1  -->
             <div class="accessories-1">
-                <div><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50">
-                    <path d="M 25 1.0507812 C 24.7825 1.0507812 24.565859 1.1197656 24.380859 1.2597656 L 1.3808594 19.210938 C 0.95085938 19.550938 0.8709375 20.179141 1.2109375 20.619141 C 1.5509375 21.049141 2.1791406 21.129062 2.6191406 20.789062 L 4 19.710938 L 4 46 C 4 46.55 4.45 47 5 47 L 19 47 L 19 29 L 31 29 L 31 47 L 45 47 C 45.55 47 46 46.55 46 46 L 46 19.710938 L 47.380859 20.789062 C 47.570859 20.929063 47.78 21 48 21 C 48.3 21 48.589063 20.869141 48.789062 20.619141 C 49.129063 20.179141 49.049141 19.550938 48.619141 19.210938 L 25.619141 1.2597656 C 25.434141 1.1197656 25.2175 1.0507812 25 1.0507812 z M 35 5 L 35 6.0507812 L 41 10.730469 L 41 5 L 35 5 z"></path>
-                </svg><h4>Home</h4> </div>
-                <div><img width="23" height="23" src="https://img.icons8.com/glyph-neue/64/stack-of-photos--v1.png" alt="stack-of-photos--v1"/><h4>Profile</h4> </div>
-                <div><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 48 48">
-                    <path fill="#8BC34A" d="M37,39H11l-6,6V11c0-3.3,2.7-6,6-6h26c3.3,0,6,2.7,6,6v22C43,36.3,40.3,39,37,39z"></path>
-                    </svg><h4>Messages</h4> </div>
-                <div><img width="23" height="23" src="https://img.icons8.com/ios/50/time-machine--v1.png" alt="time-machine--v1"/><h4>History</h4> </div>
-                <div><img width="23" height="23" src="https://img.icons8.com/ios-filled/50/task.png" alt="task"/><h4>Task</h4> </div>
-                <div><img width="28" height="28" src="https://img.icons8.com/ios-filled/50/people-working-together.png" alt="people-working-together"/><h4>Communities</h4> </div>
+                <div class="accessory-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50">
+                        <path d="M 25 1.0507812 C 24.7825 1.0507812 24.565859 1.1197656 24.380859 1.2597656 L 1.3808594 19.210938 C 0.95085938 19.550938 0.8709375 20.179141 1.2109375 20.619141 C 1.5509375 21.049141 2.1791406 21.129062 2.6191406 20.789062 L 4 19.710938 L 4 46 C 4 46.55 4.45 47 5 47 L 19 47 L 19 29 L 31 29 L 31 47 L 45 47 C 45.55 47 46 46.55 46 46 L 46 19.710938 L 47.380859 20.789062 C 47.570859 20.929063 47.78 21 48 21 C 48.3 21 48.589063 20.869141 48.789062 20.619141 C 49.129063 20.179141 49.049141 19.550938 48.619141 19.210938 L 25.619141 1.2597656 C 25.434141 1.1197656 25.2175 1.0507812 25 1.0507812 z M 35 5 L 35 6.0507812 L 41 10.730469 L 41 5 L 35 5 z"></path>
+                    </svg>
+                    <div>Home</div>
+                </div>
+                <div class="accessory-item">
+                    <img width="23" height="23" src="https://img.icons8.com/glyph-neue/64/stack-of-photos--v1.png" alt="stack-of-photos--v1"/>
+                    <div>Profile</div>
+                </div>
+                <div class="accessory-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 48 48">
+                        <path fill="#8BC34A" d="M37,39H11l-6,6V11c0-3.3,2.7-6,6-6h26c3.3,0,6,2.7,6,6v22C43,36.3,40.3,39,37,39z"></path>
+                    </svg>
+                    <div>Messages</div>
+                </div>
+                <div class="accessory-item">
+                    <img width="23" height="23" src="https://img.icons8.com/ios/50/time-machine--v1.png" alt="time-machine--v1"/>
+                    <div>History</div>
+                </div>
+                <div class="accessory-item">
+                    <img width="23" height="23" src="https://img.icons8.com/ios-filled/50/task.png" alt="task"/>
+                    <div>Task</div>
+                </div>
+                <div class="accessory-item">
+                    <img width="28" height="28" src="https://img.icons8.com/ios-filled/50/people-working-together.png" alt="people-working-together"/>
+                    <div>Communities</div>
+                </div>
             </div>
-
             <!-- Accessories 2  -->
             <div class="accessories-2">
-                <div><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="23" height="23" viewBox="0 0 50 50">
-                    <path d="M47.16,21.221l-5.91-0.966c-0.346-1.186-0.819-2.326-1.411-3.405l3.45-4.917c0.279-0.397,0.231-0.938-0.112-1.282 l-3.889-3.887c-0.347-0.346-0.893-0.391-1.291-0.104l-4.843,3.481c-1.089-0.602-2.239-1.08-3.432-1.427l-1.031-5.886 C28.607,2.35,28.192,2,27.706,2h-5.5c-0.49,0-0.908,0.355-0.987,0.839l-0.956,5.854c-1.2,0.345-2.352,0.818-3.437,1.412l-4.83-3.45 c-0.399-0.285-0.942-0.239-1.289,0.106L6.82,10.648c-0.343,0.343-0.391,0.883-0.112,1.28l3.399,4.863 c-0.605,1.095-1.087,2.254-1.438,3.46l-5.831,0.971c-0.482,0.08-0.836,0.498-0.836,0.986v5.5c0,0.485,0.348,0.9,0.825,0.985 l5.831,1.034c0.349,1.203,0.831,2.362,1.438,3.46l-3.441,4.813c-0.284,0.397-0.239,0.942,0.106,1.289l3.888,3.891 c0.343,0.343,0.884,0.391,1.281,0.112l4.87-3.411c1.093,0.601,2.248,1.078,3.445,1.424l0.976,5.861C21.3,47.647,21.717,48,22.206,48 h5.5c0.485,0,0.9-0.348,0.984-0.825l1.045-5.89c1.199-0.353,2.348-0.833,3.43-1.435l4.905,3.441 c0.398,0.281,0.938,0.232,1.282-0.111l3.888-3.891c0.346-0.347,0.391-0.894,0.104-1.292l-3.498-4.857 c0.593-1.08,1.064-2.222,1.407-3.408l5.918-1.039c0.479-0.084,0.827-0.5,0.827-0.985v-5.5C47.999,21.718,47.644,21.3,47.16,21.221z M25,32c-3.866,0-7-3.134-7-7c0-3.866,3.134-7,7-7s7,3.134,7,7C32,28.866,28.866,32,25,32z"></path>
-                </svg><h4>Setting</h4> </div>
-                <div><img width="23" height="23" src="https://img.icons8.com/ios-filled/50/request-service.png" alt="request-service"/><h4>Support</h4> </div>
-                <div><img width="23" height="23" src="https://img.icons8.com/ios-filled/50/security-user-male.png" alt="security-user-male"/><h4>Privacy</h4> </div>
+                <div class="accessory-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="23" height="23" viewBox="0 0 50 50">
+                        <path d="M47.16,21.221l-5.91-0.966c-0.346-1.186-0.819-2.326-1.411-3.405l3.45-4.917c0.279-0.397,0.231-0.938-0.112-1.282 l-3.889-3.887c-0.347-0.346-0.893-0.391-1.291-0.104l-4.843,3.481c-1.089-0.602-2.239-1.08-3.432-1.427l-1.031-5.886 C28.607,2.35,28.192,2,27.706,2h-5.5c-0.49,0-0.908,0.355-0.987,0.839l-0.956,5.854c-1.2,0.345-2.352,0.818-3.437,1.412l-4.83-3.45 c-0.399-0.285-0.942-0.239-1.289,0.106L6.82,10.648c-0.343,0.343-0.391,0.883-0.112,1.28l3.399,4.863 c-0.605,1.095-1.087,2.254-1.438,3.46l-5.831,0.971c-0.482,0.08-0.836,0.498-0.836,0.986v5.5c0,0.485,0.348,0.9,0.825,0.985 l5.831,1.034c0.349,1.203,0.831,2.362,1.438,3.46l-3.441,4.813c-0.284,0.397-0.239,0.942,0.106,1.289l3.888,3.891 c0.343,0.343,0.884,0.391,1.281,0.112l4.87-3.411c1.093,0.601,2.248,1.078,3.445,1.424l0.976,5.861C21.3,47.647,21.717,48,22.206,48 h5.5c0.485,0,0.9-0.348,0.984-0.825l1.045-5.89c1.199-0.353,2.348-0.833,3.43-1.435l4.905,3.441 c0.398,0.281,0.938,0.232,1.282-0.111l3.888-3.891c0.346-0.347,0.391-0.894,0.104-1.292l-3.498-4.857 c0.593-1.08,1.064-2.222,1.407-3.408l5.918-1.039c0.479-0.084,0.827-0.5,0.827-0.985v-5.5C47.999,21.718,47.644,21.3,47.16,21.221z M25,32c-3.866,0-7-3.134-7-7c0-3.866,3.134-7,7-7s7,3.134,7,7C32,28.866,28.866,32,25,32z"></path>
+                    </svg>
+                    <div>Setting</div> 
+                </div>
+                <div class="accessory-item">
+                    <img width="23" height="23" src="https://img.icons8.com/ios-filled/50/request-service.png" alt="request-service"/>
+                    <div>Support</div> 
+                </div>
+                <div class="accessory-item">
+                    <img width="23" height="23" src="https://img.icons8.com/ios-filled/50/security-user-male.png" alt="security-user-male"/>
+                    <div>Privacy</div> 
+                </div>
             </div>
         </div>
 
         <!-- Header Panel -->
         <div class="header">
             <div class="first-row">
-
                 <div class="smallthings-1">
-                    <div class="mag-glass"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50">
-                        <path d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z"></path>
-                        </svg></div>
-                    <div class="search-bar"><input type="text" placeholder="Search..." class="search-input"></div>
+                    <div class="mag-glass">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50">
+                            <path d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z"></path>
+                        </svg>
+                    </div>
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search..." class="search-input">
+                    </div>
                 </div>
 
                 <div class="smallthings-2">
-                    <div class="bell"><img width="30" height="30" src="https://img.icons8.com/ios/50/alarm--v1.png" alt="alarm--v1"/></div>
-                    <div class="profile-pic"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 32 32">
-                        <path d="M 16.042969 0 L 9 17 C 7 21 3 18 3 18 C 5 23 3 25 3 25 C 3 25 4 23 7 26 C 10 29 15 29 15 29 C 8 28 8.43 25.043 9 23 C 10.285 18.391 15.5 5 15.5 5 L 23 23 C 25 28 17 29 17 29 C 17 29 22 29 25 26 C 28 23 29 25 29 25 C 27 22 29 18 29 18 C 25 21 23 17 23 17 L 16.042969 0 z M 2 25 C 2 25 6.9990625 32 15.914062 32 C 24.829062 32 30 25 30 25 C 19 35 16 29 16 29 C 13 35 2 25 2 25 z"></path>
-                        </svg></div>
+                    <div class="bell">
+                        <img width="30" height="30" src="https://img.icons8.com/ios/50/alarm--v1.png" alt="alarm--v1"/>
+                    </div>
+                    <div class="profile-pic">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 32 32">
+                            <path d="M 16.042969 0 L 9 17 C 7 21 3 18 3 18 C 5 23 3 25 3 25 C 3 25 4 23 7 26 C 10 29 15 29 15 29 C 8 28 8.43 25.043 9 23 C 10.285 18.391 15.5 5 15.5 5 L 23 23 C 25 28 17 29 17 29 C 17 29 22 29 25 26 C 28 23 29 25 29 25 C 27 22 29 18 29 18 C 25 21 23 17 23 17 L 16.042969 0 z M 2 25 C 2 25 6.9990625 32 15.914062 32 C 24.829062 32 30 25 30 25 C 19 35 16 29 16 29 C 13 35 2 25 2 25 z"></path>
+                        </svg>
+                    </div>
                     <div class="name">Samama Karim</div>
                 </div>
             </div>
 
             <div class="second-row">
-
                 <div class="smallthings-3">
-                    <div class="big-profile"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 32 32">
-                        <path d="M 16.042969 0 L 9 17 C 7 21 3 18 3 18 C 5 23 3 25 3 25 C 3 25 4 23 7 26 C 10 29 15 29 15 29 C 8 28 8.43 25.043 9 23 C 10.285 18.391 15.5 5 15.5 5 L 23 23 C 25 28 17 29 17 29 C 17 29 22 29 25 26 C 28 23 29 25 29 25 C 27 22 29 18 29 18 C 25 21 23 17 23 17 L 16.042969 0 z M 2 25 C 2 25 6.9990625 32 15.914062 32 C 24.829062 32 30 25 30 25 C 19 35 16 29 16 29 C 13 35 2 25 2 25 z"></path></div>
-                        <div class="text">
-                            <span>Hi , There</span>
-                            <div class="hashtag">Samama Karim (@samama)</div> 
+                    <div class="big-profile">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 32 32">
+                            <path d="M 16.042969 0 L 9 17 C 7 21 3 18 3 18 C 5 23 3 25 3 25 C 3 25 4 23 7 26 C 10 29 15 29 15 29 C 8 28 8.43 25.043 9 23 C 10.285 18.391 15.5 5 15.5 5 L 23 23 C 25 28 17 29 17 29 C 17 29 22 29 25 26 C 28 23 29 25 29 25 C 27 22 29 18 29 18 C 25 21 23 17 23 17 L 16.042969 0 z M 2 25 C 2 25 6.9990625 32 15.914062 32 C 24.829062 32 30 25 30 25 C 19 35 16 29 16 29 C 13 35 2 25 2 25 z"></path>
+                        </svg>
+                    </div>
+                    <div class="text">
+                        <span>Hi , There</span>
+                        <div class="hashtag">Samama Karim (@samama)</div> 
                     </div>
                 </div>
                 
@@ -73,14 +114,111 @@
                     <button class="upload">Upload</button>
                     <button class="share">Share</button>
                 </div>
-                
             </div>
         </div>
 
+        <!-- Main Panel  -->
 
-        <div class="main-panel"></div>
+        <div class="main-panel">
+            <div class="heading">Your Project</div>
+            <div class="grid-main-layout">
+                <div class="projects">
+                    <div class="project"><div class="words">
+                        <h4>Super Cool Project</h4> <p>Sed tempus ut lacus ut scelerisque.
+                            Suspendisse sollicitudin nibh erat, id
+                            facilisis felis accumsan nec.</p> 
+                    </div><div class="icon1 icons">
+                            <img width="24" height="24" src="https://img.icons8.com/material-outlined/24/star--v2.png" alt="star--v2"/>
+                            <img width="24" height="24" src="https://img.icons8.com/ios-glyphs/30/visible--v1.png" alt="visible--v1"/>
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 30 30">
+                                <path d="M 23 3 A 4 4 0 0 0 19 7 A 4 4 0 0 0 19.09375 7.8359375 L 10.011719 12.376953 A 4 4 0 0 0 7 11 A 4 4 0 0 0 3 15 A 4 4 0 0 0 7 19 A 4 4 0 0 0 10.013672 17.625 L 19.089844 22.164062 A 4 4 0 0 0 19 23 A 4 4 0 0 0 23 27 A 4 4 0 0 0 27 23 A 4 4 0 0 0 23 19 A 4 4 0 0 0 19.986328 20.375 L 10.910156 15.835938 A 4 4 0 0 0 11 15 A 4 4 0 0 0 10.90625 14.166016 L 19.988281 9.625 A 4 4 0 0 0 23 11 A 4 4 0 0 0 27 7 A 4 4 0 0 0 23 3 z"></path>
+                                </svg>
+                        </div></div>
+
+                    <div class="project"><div class="words"><h4>Less Cool Project</h4> <p>Nullam condimentum ipsum ut lectus vehicula
+                        consectetur. Quisque sed dolor tincidunt,
+                        consectetur sapien et, facilisis dolor. Duis sem
+                        purus, dignissim ut sapien in, varius
+                        pellentesque lacus.</p><div class="icon2 icons">
+                        <img width="24" height="24" src="https://img.icons8.com/material-outlined/24/star--v2.png" alt="star--v2"/>
+                        <img width="24" height="24" src="https://img.icons8.com/ios-glyphs/30/visible--v1.png" alt="visible--v1"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 30 30">
+                            <path d="M 23 3 A 4 4 0 0 0 19 7 A 4 4 0 0 0 19.09375 7.8359375 L 10.011719 12.376953 A 4 4 0 0 0 7 11 A 4 4 0 0 0 3 15 A 4 4 0 0 0 7 19 A 4 4 0 0 0 10.013672 17.625 L 19.089844 22.164062 A 4 4 0 0 0 19 23 A 4 4 0 0 0 23 27 A 4 4 0 0 0 27 23 A 4 4 0 0 0 23 19 A 4 4 0 0 0 19.986328 20.375 L 10.910156 15.835938 A 4 4 0 0 0 11 15 A 4 4 0 0 0 10.90625 14.166016 L 19.988281 9.625 A 4 4 0 0 0 23 11 A 4 4 0 0 0 27 7 A 4 4 0 0 0 23 3 z"></path>
+                            </svg>
+                    </div></div></div>
+
+
+                     <div class="project"><div class="words"><h4>Impossible App</h4> <p>In hac habitasse platea dictumst. Vivamus
+                        dictum rutrum arcu, a placerat velit sagittis
+                        id.</p><div class="icon3 icons">
+                        <img width="24" height="24" src="https://img.icons8.com/material-outlined/24/star--v2.png" alt="star--v2"/>
+                        <img width="24" height="24" src="https://img.icons8.com/ios-glyphs/30/visible--v1.png" alt="visible--v1"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 30 30">
+                            <path d="M 23 3 A 4 4 0 0 0 19 7 A 4 4 0 0 0 19.09375 7.8359375 L 10.011719 12.376953 A 4 4 0 0 0 7 11 A 4 4 0 0 0 3 15 A 4 4 0 0 0 7 19 A 4 4 0 0 0 10.013672 17.625 L 19.089844 22.164062 A 4 4 0 0 0 19 23 A 4 4 0 0 0 23 27 A 4 4 0 0 0 27 23 A 4 4 0 0 0 23 19 A 4 4 0 0 0 19.986328 20.375 L 10.910156 15.835938 A 4 4 0 0 0 11 15 A 4 4 0 0 0 10.90625 14.166016 L 19.988281 9.625 A 4 4 0 0 0 23 11 A 4 4 0 0 0 27 7 A 4 4 0 0 0 23 3 z"></path>
+                            </svg>
+                    </div></div></div>
+
+                     <div class="project"><div class="words"><h4>Easy Peasy App</h4> <p>Etiam cursus eros ace ICitur ringi a.
+                        Vestibulum dignissim urna eget accumsan
+                        aliquam. Curabitur dignissim nisi in tortor
+                        commodo, ac bibendum magna tincidunt.</p><div class="icon4 icons">
+                        <img width="24" height="24" src="https://img.icons8.com/material-outlined/24/star--v2.png" alt="star--v2"/>
+                        <img width="24" height="24" src="https://img.icons8.com/ios-glyphs/30/visible--v1.png" alt="visible--v1"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 30 30">
+                            <path d="M 23 3 A 4 4 0 0 0 19 7 A 4 4 0 0 0 19.09375 7.8359375 L 10.011719 12.376953 A 4 4 0 0 0 7 11 A 4 4 0 0 0 3 15 A 4 4 0 0 0 7 19 A 4 4 0 0 0 10.013672 17.625 L 19.089844 22.164062 A 4 4 0 0 0 19 23 A 4 4 0 0 0 23 27 A 4 4 0 0 0 27 23 A 4 4 0 0 0 23 19 A 4 4 0 0 0 19.986328 20.375 L 10.910156 15.835938 A 4 4 0 0 0 11 15 A 4 4 0 0 0 10.90625 14.166016 L 19.988281 9.625 A 4 4 0 0 0 23 11 A 4 4 0 0 0 27 7 A 4 4 0 0 0 23 3 z"></path>
+                            </svg>
+                    </div></div></div>
+
+                     <div class="project"><div class="words"><h4>Ad Blocker</h4> <p>Quisque eget rutrum nisl. Nam augue
+                        justo, cursus vitae metus vel, pharetra
+                        hendrerit felis. Aliquam sed malesuada
+                        eros.</p><div class="icons">
+                        <img width="24" height="24" src="https://img.icons8.com/material-outlined/24/star--v2.png" alt="star--v2"/>
+                        <img width="24" height="24" src="https://img.icons8.com/ios-glyphs/30/visible--v1.png" alt="visible--v1"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 30 30">
+                            <path d="M 23 3 A 4 4 0 0 0 19 7 A 4 4 0 0 0 19.09375 7.8359375 L 10.011719 12.376953 A 4 4 0 0 0 7 11 A 4 4 0 0 0 3 15 A 4 4 0 0 0 7 19 A 4 4 0 0 0 10.013672 17.625 L 19.089844 22.164062 A 4 4 0 0 0 19 23 A 4 4 0 0 0 23 27 A 4 4 0 0 0 27 23 A 4 4 0 0 0 23 19 A 4 4 0 0 0 19.986328 20.375 L 10.910156 15.835938 A 4 4 0 0 0 11 15 A 4 4 0 0 0 10.90625 14.166016 L 19.988281 9.625 A 4 4 0 0 0 23 11 A 4 4 0 0 0 27 7 A 4 4 0 0 0 23 3 z"></path>
+                            </svg>
+                    </div></div></div>
+
+                     <div class="project"><div class="words"><h4>Money Maker</h4> <p>Praesent convallis, libero quis congue
+                        elementum, nunc ante faucibus sapien, ac
+                        scelerisque tortor purus sit amet ex.
+                        Pellentesque mollis nec sem vel aliquam.</p><div class="icon6 icons">
+                        <img width="24" height="24" src="https://img.icons8.com/material-outlined/24/star--v2.png" alt="star--v2"/>
+                        <img width="24" height="24" src="https://img.icons8.com/ios-glyphs/30/visible--v1.png" alt="visible--v1"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 30 30">
+                            <path d="M 23 3 A 4 4 0 0 0 19 7 A 4 4 0 0 0 19.09375 7.8359375 L 10.011719 12.376953 A 4 4 0 0 0 7 11 A 4 4 0 0 0 3 15 A 4 4 0 0 0 7 19 A 4 4 0 0 0 10.013672 17.625 L 19.089844 22.164062 A 4 4 0 0 0 19 23 A 4 4 0 0 0 23 27 A 4 4 0 0 0 27 23 A 4 4 0 0 0 23 19 A 4 4 0 0 0 19.986328 20.375 L 10.910156 15.835938 A 4 4 0 0 0 11 15 A 4 4 0 0 0 10.90625 14.166016 L 19.988281 9.625 A 4 4 0 0 0 23 11 A 4 4 0 0 0 27 7 A 4 4 0 0 0 23 3 z"></path>
+                            </svg>
+                    </div></div></div>
+                </div>
+                <div class="sidebar-grid">
+                    <div class="announcement">
+                        <div class="para1">
+                            <h4>Site Maintenance</h4>
+                            <p>Vestibulum condimentum tellus lacus,
+                                in accumsan elit maximus ac. Donec
+                                hendrerit sodales congue...</p>
+                        </div>
+                        <div class="para2">
+                            <h4>Community Share Day</h4>
+                            <p>Nam ve ec us Incl un , ru rum nu a
+                                eu, ornare libero. Aliquam dictum
+                                accumsan porttitor...</p>
+                        </div>
+                        <div class="para3">
+                            <h4>Updated Privacy Policy</h4>
+                            <p>Phasellus efficitur nisi eget elit
+                                consectetur, eget condimentum ante
+                                auctor. Cras fringilla sagittis sem in
+                                mattis...</p>
+                        </div>
+                    </div>
+                    <div class="trending"></div>
+                </div>
+            </div>
+        </div>
+
+        </div>
     </div>
-
-    
 </body>
 </html>
